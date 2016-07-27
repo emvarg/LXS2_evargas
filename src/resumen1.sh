@@ -34,7 +34,7 @@ echo $CONTADOR
 # Notar que se usa "" para definir una estructura de datos tipo arreglo
 
 VAR1="algo:otro guia, paso, calle"
-IFS=:,
+#IFS=:,
 
 
 for i in $VAR1
@@ -42,5 +42,13 @@ do
 	echo Dato = $i
 done
 
+echo $HOSTNAME
+echo "VAR2 es: $VAR2"
+echo "VAR3 es: $VAR3"
+
+for i in "$*"
+do
+	echo $i
+done
 
 
