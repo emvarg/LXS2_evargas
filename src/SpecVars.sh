@@ -15,6 +15,6 @@ then
 else
 	echo "El archivo1 no pudo ser respaldado, por lo tanto el archivos 
 dos tampoco fue respaldado, verifique $ERRORLOG"
-	cat $ERRORLOG | mail -s "Error de respaldo" uk3xd8@gmail.com
+	#cat $ERRORLOG | mail -s "Error de respaldo" uk3xd8@gmail.com
 	
 fi
