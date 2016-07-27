@@ -10,6 +10,7 @@ PARAMS=3
 CONTADOR=1
 
 
+#Evaluacion de argumentos del script
 if [[ $# != $PARAMS ]]
 then
 	echo "Cantidad incorrecta de parametros: $#"
@@ -26,4 +27,20 @@ do
 done
 
 echo $CONTADOR
-	
+
+# Inicio del ejemplo con IFS.
+#Por defecto, el IFS (Internal Field Separator) es
+#IFS=$' \n\t'
+# Notar que se usa "" para definir una estructura de datos tipo arreglo
+
+VAR1="algo:otro guia, paso, calle"
+IFS=:,
+
+
+for i in $VAR1
+do
+	echo Dato = $i
+done
+
+
+
