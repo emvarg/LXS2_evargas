@@ -7,6 +7,8 @@
 
 # Definicion de variables
 PARAMS=3
+CONTADOR=1
+
 
 if [[ $# != $PARAMS ]]
 then
@@ -15,5 +17,13 @@ then
 	exit 1
 fi
 
-echo "Parametros correctos = $#"
+echo "Numero de parametros correctos = $#"
+
+for i in $@
+do
+	echo "El parametro $CONTADOR fue: $i"
+	let "CONTADOR=$CONTADOR + 1"
+done
+
+echo $CONTADOR
 	
