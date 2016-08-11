@@ -1,0 +1,39 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns1.kroster.tk. admin.kroster.tk. (
+		     2016081101		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+; Name servers
+;
+kroster.tk.	IN	NS	ns1.kroster.tk.
+kroster.tk.	IN	NS	ns2.kroster.tk.
+
+; Tambien se puede usar el @ para referenciar dominio base kroster.tk
+;@	IN	NS	ns1.kroster.tk
+;@	IN	NS	ns2.kroster.tk
+
+;
+; Registros tipo A para los servidores de nombres
+;
+
+ns1	IN	A	52.33.185.31
+ns2	IN	A	52.43.179.224
+
+
+;
+; Mis registros tipo A (IPv4)
+
+@	IN	A	52.41.80.94
+www	IN	A	52.41.80.94
+
+;
+; Registro TXT
+;
+
+@	182	IN	TXT	"Encargado: emmanuel vargas b"
