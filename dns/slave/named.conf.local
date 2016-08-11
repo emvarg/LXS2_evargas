@@ -1,0 +1,14 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "kroster.tk" IN {
+	type slave;
+	file "db.kroster.tk";
+	masters { 52.33.185.31; };
+	allow-query { any; };
+};
