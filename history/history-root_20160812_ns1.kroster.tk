@@ -1,0 +1,157 @@
+    1  cd /etc/
+    2  ls
+    3  cd bind/
+    4  ls
+    5  cd ..
+    6  ls
+    7  tar -pczf bind.tar.gz bind
+    8  cd bind/
+    9  ls
+   10  vim named.conf
+   11  vim named.conf.options 
+   12  screen
+   13  screen -list 
+   14  screen -r 
+   15  ls
+   16  vim named.conf.local 
+   17  ls
+   18  vim named.conf.options 
+   19  grep "//" named.conf.options 
+   20  grep -v "//" named.conf.options 
+   21  vim named.conf.options
+   22  ip -4 addr 
+   23  ls
+   24  vim named.conf.local 
+   25  named-checkconf 
+   26  vim named.conf.local 
+   27  named-checkconf 
+   28  vim named.conf.options 
+   29  named-checkconf 
+   30  vim named.conf.local 
+   31  named-checkconf 
+   32  echo $?
+   33  ls
+   34  mkdir zones
+   35  vim zones/db.kroster.tk
+   36  vim named.conf.default-zones 
+   37  ls
+   38  vim zones.rfc1918 
+   39  ls
+   40  cd zones
+   41  ls
+   42  cat ../named.conf.local 
+   43  vim db.kroster.tk
+   44  vim ../named.conf.options 
+   45  ls
+   46  vim ../named.conf.local 
+   47  ls
+   48  cat db.kroster.tk 
+   49  cp ../db.local db.kroster.tk
+   50  vim db.kroster.tk 
+   51  ls
+   52  named-checkzone db.kroster.tk 
+   53  named-checkzone kroster.tk  db.kroster.tk 
+   54  named-checkzone kroster.tk  /etc/bind/zonesdb.kroster.tk 
+   55  named-checkzone kroster.tk  /etc/bind/zones/db.kroster.tk 
+   56  vim db.kroster.tk 
+   57  named-checkzone kroster.tk  /etc/bind/zones/db.kroster.tk 
+   58  vim db.kroster.tk 
+   59  named-checkzone kroster.tk  /etc/bind/zones/db.kroster.tk 
+   60  vim db.kroster.tk 
+   61  named-checkzone kroster.tk  /etc/bind/zones/db.kroster.tk 
+   62  service bind9 restart 
+   63  less /var/log/syslog 
+   64  ls
+   65  vim ../named.conf.local 
+   66  vim ../zones.rfc1918 
+   67  exit 
+   68  cd /bin/
+   69  ls
+   70  screen -list 
+   71  screen -r 
+   72  exit 
+   73  cd /etc/bind
+   74  ls
+   75  vim named.conf.local 
+   76  vim named.conf.options 
+   77  vim named.conf.local 
+   78  tail /var/log/syslog 
+   79  cat /etc/hosts
+   80  screen 
+   81  screen -list 
+   82  ls
+   83  cd /bin/
+   84  ls
+   85  cd 
+   86  cd /etc/bind/
+   87  ls
+   88  cp named.conf.options /home/csmcpyte/LXS2_evargas/dns/master/
+   89  cp named.conf.local /home/csmcpyte/LXS2_evargas/dns/master/
+   90  cp -r zones /home/csmcpyte/LXS2_evargas/dns/master/
+   91  ls
+   92  ls -l
+   93  vim db.255 
+   94  ls
+   95  ls -l
+   96  vim db.root 
+   97  ls
+   98  ls -l
+   99  ls zones
+  100  exit
+  101  cat /etc/hosts
+  102  apt-cache search nslookup
+  103  nslookup 
+  104  nslookup kroster.tk
+  105  nslookup ns1.kroster.tk
+  106  exit 
+  107  less /var/log/syslog 
+  108  dmesg | tail 
+  109  ls
+  110  cat /etc/hosts
+  111  ping kroster.tk 
+  112  screen -list 
+  113  screen
+  114  cd /etc/bind/
+  115  ls
+  116  vim named.confop
+  117  vim named.conf.options 
+  118  grep -v "//" named.conf.options
+  119  ls
+  120  ls named.conf*
+  121  ls named.conf* -l
+  122  vim named.conf.local 
+  123  fg
+  124  vim named.conf
+  125  vim named.conf.options 
+  126  vim named.conf.local 
+  127  named-checkconf 
+  128  vim named.conf.local 
+  129  named-checkconf 
+  130  ls /home/
+  131  ls /home/csmcpyte/
+  132  named-checkconf 
+  133  echo $?
+  134  ls
+  135  ls- l
+  136  ls -l 
+  137  cd zones/
+  138  ls
+  139  ls -la
+  140  cp ../db.local .
+  141  vim db.local 
+  142  fg
+  143  ls
+  144  ls -l
+  145  cd ..
+  146  ls
+  147  vim named.conf.options 
+  148  vim named.conf.local 
+  149  ls -l
+  150  tree zones
+  151  service bind9 restart
+  152  cd zones/
+  153  named-checkzone kroster.tk db.kroster.tk 
+  154  less /var/log/syslog 
+  155  cat  /var/log/syslog  | grep named
+  156  cd 
+  157  history > /home/csmcpyte/LXS2_evargas/history/history-root_`date +%Y%m%d`_$HOSTNAME

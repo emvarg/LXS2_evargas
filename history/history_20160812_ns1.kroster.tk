@@ -1,0 +1,77 @@
+    1  mkdir .ssh
+    2  vim .ssh/authorized_keys
+    3  exit 
+    4  ls
+    5  exit 
+    6  ls -l .ssh/
+    7  cd .ssh/
+    8  ls -la 
+    9  chmod 600 authorized_keys 
+   10  ls -la
+   11  exit 
+   12  cat /etc/hosts
+   13  ls
+   14  exit 
+   15  sudo vim /etc/hosts
+   16  sudo vim /etc/hostname 
+   17  sudo hostname -F /etc/hostname 
+   18  exit 
+   19  echo $HOSTNAME
+   20  exit 
+   21  w
+   22  sudo apt-get install bind9 bind9utils 
+   23  sudo su -
+   24  exit 
+   25  sudo su -
+   26  dig kroster.tk
+   27  dig emate.ucr.ac.cr
+   28  cat /etc/resolv.conf 
+   29  ping us-west-2.compute.internal
+   30  dig www.kroster.tk
+   31  sudo apt-get install nmap 
+   32  nmap localhost 
+   33  nmap ns2.kroster.tk 
+   34  nmap kroster.tk 
+   35  nmap ns1.kroster.tk 
+   36  ls /var/
+   37  dig ns1.kroster.tk
+   38  ls
+   39  tail /var/log/syslog 
+   40  sudo tail /var/log/syslog 
+   41  sudo cat  /var/log/syslog  | grep named 
+   42  sudo apt-get install git 
+   43  ls
+   44  git clone https://github.com/emvarg/LXS2_evargas.git
+   45  ls
+   46  cd LXS2_evargas/
+   47  ls
+   48  mkdir dns 
+   49  mkdir dns/master
+   50  mkdir dns/slave
+   51  cd dns/
+   52  ls
+   53  cp /etc/hosts .
+   54  cat hosts 
+   55  ls
+   56  sudo su -
+   57  ls
+   58  sudo chown csmcpyte:csmcpyte -R *
+   59  ls- la
+   60  sudo apt-get install tree
+   61  tree -gup
+   62  git status 
+   63  git add *
+   64  git status 
+   65  git commit  -m "configs de master-dns + hosts general "
+   66  git config --global user.mail "emvargcr@gmail.com"
+   67  git config --global user.name "Emmanuel V"
+   68  git commit  -m "configs de master-dns + hosts general "
+   69  git status 
+   70  git push origin master 
+   71  git log 
+   72  exit 
+   73  sudo su -
+   74  exit 
+   75  sudo su -
+   76  sudo su -
+   77  history > /home/csmcpyte/LXS2_evargas/history/history_`date +%Y%m%d`_$HOSTNAME
